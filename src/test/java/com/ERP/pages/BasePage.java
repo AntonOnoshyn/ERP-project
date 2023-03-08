@@ -20,6 +20,9 @@ public abstract class BasePage {
   @FindBy(xpath = "//span[normalize-space()='Repairs']")
   public WebElement repairsButton;
 
+ @FindBy(xpath = "(//span[contains(text(),'Point of Sale')])[1]")
+  public WebElement PointOfSale_Button;
+
 
 
 
