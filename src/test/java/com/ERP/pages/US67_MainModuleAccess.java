@@ -6,15 +6,20 @@ import org.openqa.selenium.devtools.v85.page.Page;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class US67_MainModuleAccess extends BasePage {
 
     public US67_MainModuleAccess(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//span[normalize-space()='Discuss']")
-    public WebElement Discuss;
 
-    @FindBy(xpath = "//span[normalize-space()='Calendar']")
+     @FindBy(xpath = "//li[@style='display:block;']")
+    public List<WebElement> allModules;
+
+
+
+  /*  @FindBy(xpath = "//span[normalize-space()='Calendar']")
     public WebElement Calendar;
 
     @FindBy(xpath = "//span[normalize-space()='Notes']")
@@ -61,6 +66,8 @@ public class US67_MainModuleAccess extends BasePage {
 
     @FindBy(xpath = "//span[normalize-space()=' Dashboards']")
     public WebElement Dashboards;
+
+     */
 
 
 
