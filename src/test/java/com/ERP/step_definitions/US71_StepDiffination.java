@@ -4,9 +4,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class US8_StepDifinitions {
+public class US71_StepDiffination {
 
-    US8_StepDifinitions stepDifinitions = new US8_StepDifinitions();
+    US71_StepDiffination stepDifinitions = new US71_StepDiffination();
 
     @Given("user is on the login page")
 
