@@ -32,7 +32,7 @@ public class US66_MainModules_Step_Definitions {
     public void user_should_be_able_to_access_to_the_modules(List<Integer>expectedModules) {
 
         List<Boolean> actualModules = Collections.singletonList(mainModulesAccess.access22Modules.isEnabled());
-        Assert.assertEquals(expectedModules,actualModules);
+        Assert.assertTrue(actualModules.contains(expectedModules));
 
 
 
