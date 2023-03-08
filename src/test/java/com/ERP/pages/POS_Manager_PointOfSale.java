@@ -8,6 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class POS_Manager_PointOfSale extends BasePage{
 
     public POS_Manager_PointOfSale(){
@@ -20,8 +23,19 @@ public class POS_Manager_PointOfSale extends BasePage{
     @FindBy (xpath = "(//table//div[@class='o_checkbox'])[1]")
     public WebElement orderRef;
 
-    @FindBy(xpath = "//table//div[@class='o_checkbox']")
-    public WebElement webTableElements;
+    @FindBy(xpath = "(//table//div[@class='o_checkbox'])[2]")
+
+    public WebElement secondEl;
+
+
+    @FindBy(xpath = "//button[normalize-space(text())='Action'] ")
+    public WebElement ActionDropDown;
+
+    @FindBy(xpath = "//a[normalize-space(text())='Export']")
+    public WebElement Export;
+
+    @FindBy(xpath = "//a[normalize-space(text())='Delete']")
+    public WebElement delete;
 
 
 
