@@ -3,7 +3,6 @@ Feature: Repairs function access
 
   Background: User is on log in page
 
-  @wipH
   Scenario Outline: POS and sales manager see six columns on the Repairs page
     Given user enters POS manager or Sales manager "<username>" and "<password>"
     When user clicks on Repairs tab and lands on Repairs page
