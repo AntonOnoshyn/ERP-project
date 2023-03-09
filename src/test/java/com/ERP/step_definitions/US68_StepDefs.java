@@ -3,18 +3,13 @@ package com.ERP.step_definitions;
 import com.ERP.pages.POS_Manager_PointOfSale;
 import com.ERP.utilities.BrowserUtils;
 import com.ERP.utilities.ConfigurationReader;
-import com.ERP.utilities.Driver;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
-public class US05_StepDefs {
+public class US68_StepDefs {
 
 
     POS_Manager_PointOfSale pos_manager_pointOfSale = new POS_Manager_PointOfSale();
