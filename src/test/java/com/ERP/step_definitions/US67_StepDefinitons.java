@@ -26,13 +26,30 @@ public class US67_StepDefinitons {
     @Then("user will have access to the {int} modules")
     public void user_will_have_access_to_the_modules(Integer int1) {
 
-        WebElement module;
-        for (int i = 0; i <= mainModuleAccess.allModules.size(); i++) {
+
+       /* for (int i = 0; i <= mainModuleAccess.allModules.size(); i++) {
             module = mainModuleAccess.allModules.get(i);
             module.click();
-        if (module.isDisplayed()){
+
+        */
+
+
+        for ( WebElement each : mainModuleAccess.allModules ) {
+           each.click();
+           Assert.assertTrue(each.isDisplayed());
+        }
+
+        }
+
+
+
+
+       /* if (module.isDisplayed()){
                 Assert.assertTrue(module.isDisplayed());
             }
+
+        */
+
 
 
         }
