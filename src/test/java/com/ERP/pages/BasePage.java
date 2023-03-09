@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public abstract class BasePage {
-   public BasePage() {PageFactory.initElements(Driver.getDriver(),this);}
+public  class BasePage {
+   public  BasePage() {PageFactory.initElements(Driver.getDriver(),this);}
 
   @FindBy(id = "login")
   public WebElement txt_username;
@@ -24,6 +24,6 @@ public abstract class BasePage {
   public WebElement PointOfSale_Button;
 
 
-
-
+//@FindBy(xpath = "//div[@class='table-responsive']")
+//int columnCount = element.findElement(by.tagName(“th”)).size();
 }
