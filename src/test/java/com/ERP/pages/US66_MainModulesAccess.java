@@ -13,11 +13,11 @@ public class US66_MainModulesAccess extends BasePage {
     }
 
 
-    //@FindBy(xpath = "//button[@type='submit']")
-   // public WebElement txt_login;
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement txt_login;
 
-   // @FindBy(xpath = "//li[@style='display: block;']")
-    //public List<WebElement> access22Modules;
+    @FindBy(xpath = "//li[@style='display: block;']")
+    public List<WebElement> access22Modules;
 
 
 
