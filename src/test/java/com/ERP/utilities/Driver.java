@@ -2,6 +2,7 @@ package com.ERP.utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
@@ -31,7 +32,9 @@ public class Driver {
                 case "chrome":
                     // WebDriverManager.chromedriver().setup();
                     //driver = new ChromeDriver(); single run
-                    driverPool.set(new ChromeDriver());
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--remote-allow-origins=*");
+                    driverPool.set(new ChromeDriver(options));
                     // driver.manage().window().maximize(); single run
                     driverPool.get().manage().window().maximize();
                     //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
