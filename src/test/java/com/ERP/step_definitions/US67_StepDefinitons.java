@@ -27,9 +27,13 @@ public class US67_StepDefinitons {
     public void user_will_have_access_to_the_modules(Integer int1) {
 
         WebElement module;
-        for (int i = 0; i < mainModuleAccess.allModules.size(); i++) {
+        for (int i = 0; i <= mainModuleAccess.allModules.size(); i++) {
             module = mainModuleAccess.allModules.get(i);
             module.click();
+        if (module.isDisplayed()){
+                Assert.assertTrue(module.isDisplayed());
+            }
+
 
         }
       /*  mainModuleAccess.Discuss.click();
