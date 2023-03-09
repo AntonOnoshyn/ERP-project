@@ -13,8 +13,8 @@ public class RepairsOrderPage extends BasePage {
 
         PageFactory.initElements(Driver.getDriver(),this);}
 
-    //@FindBy(xpath = "//table/thead/tr/th[1]")
-   // public WebElement RepairsTableColumn1;
+    @FindBy(xpath = "//table/thead/tr/th")
+    public WebElement RepairsTableColumn;
 
     @FindBy(xpath = "//span[normalize-space()='Repairs']")
     public WebElement RepairsButton;
