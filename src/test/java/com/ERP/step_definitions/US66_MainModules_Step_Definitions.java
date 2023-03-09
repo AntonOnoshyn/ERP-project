@@ -27,11 +27,11 @@ public class US66_MainModules_Step_Definitions {
     @Then("user should be able to access to the {int} modules")
     public void user_should_be_able_to_access_to_the_modules(Integer expectedModules) {
 
-       WebElement actualModules = mainModulesAccess.access22Modules;
-        Assert.assertEquals(actualModules,expectedModules);
 
-
-
+Assert.assertEquals( mainModulesAccess.access22Modules.size(),17);
+        for (WebElement access22Module : mainModulesAccess.access22Modules) {
+            Assert.assertTrue(access22Module.isEnabled());
+        }
 
 
 

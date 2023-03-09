@@ -22,7 +22,7 @@ public class US66_MainModulesAccess {
     public WebElement txt_login;
 
     @FindBy(xpath = "//li[@style='display: block;']")
-    public WebElement access22Modules;
+    public List<WebElement> access22Modules;
 
 
 
