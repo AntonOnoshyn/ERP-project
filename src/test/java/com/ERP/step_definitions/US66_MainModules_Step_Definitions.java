@@ -22,7 +22,7 @@ public class US66_MainModules_Step_Definitions {
     }
     @And("user login on the page")
     public void userLoginOnThePage() {
-        mainModulesAccess.txt_login.click();
+        mainModulesAccess.btn_log_in.click();
     }
     @Then("user should be able to access to the {int} modules")
     public void user_should_be_able_to_access_to_the_modules(Integer expectedModules) {
