@@ -13,7 +13,7 @@ public class US67_MainModuleAccess extends BasePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-     @FindBy(xpath = "//li[@style='display:block;']")
+     @FindBy(xpath = "//li[@style='display: block;']")
     public List<WebElement> allModules;
 
 
