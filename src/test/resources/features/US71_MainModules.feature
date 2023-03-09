@@ -6,4 +6,5 @@ Feature: Expenses Manager Access Different Modules
 
     Given user is on the log in page
     When user enter the valid credentials
+    And user click log in
     Then user will have access to the 12 different modules

@@ -1,9 +1,12 @@
 package com.ERP.step_definitions;
 
 import com.ERP.pages.US71_DifferentModulesAccess;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 public class US71_StepDefinitions {
 
@@ -20,11 +23,20 @@ public class US71_StepDefinitions {
 
         us71DifferentModulesAccess.txt_password.sendKeys("expensesmanager");
     }
+    @And("user click log in")
+    public void user_click_log_in(){
+        us71DifferentModulesAccess.btn_log_in.click();
+    }
 
     @Then("user will have access to the {int} different modules")
     public void user_will_have_access_to_the_different_modules(Integer int1) {
 
-        us71DifferentModulesAccess.btn_log_in.click();
+        Assert.assertEquals(us71DifferentModulesAccess.access12modules.size(),12);
+
+        for (WebElement each : us71DifferentModulesAccess.access12modules ) {
+            Assert.assertTrue(each.isEnabled());
+        }
+
 
     }
 
