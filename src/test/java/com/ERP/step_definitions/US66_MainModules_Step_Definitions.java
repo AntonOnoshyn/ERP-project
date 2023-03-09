@@ -1,16 +1,12 @@
 package com.ERP.step_definitions;
 
-import com.ERP.pages.BasePage;
 import com.ERP.pages.US66_MainModulesAccess;
-import com.ERP.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-
-import java.util.Collections;
-import java.util.List;
+import org.openqa.selenium.WebElement;
 
 public class US66_MainModules_Step_Definitions {
     US66_MainModulesAccess mainModulesAccess = new US66_MainModulesAccess();
@@ -29,10 +25,13 @@ public class US66_MainModules_Step_Definitions {
         mainModulesAccess.txt_login.click();
     }
     @Then("user should be able to access to the {int} modules")
-    public void user_should_be_able_to_access_to_the_modules(List<Integer>expectedModules) {
+    public void user_should_be_able_to_access_to_the_modules(Integer expectedModules) {
 
-        List<Boolean> actualModules = Collections.singletonList(mainModulesAccess.access22Modules.isEnabled());
-        Assert.assertTrue(actualModules.contains(expectedModules));
+       WebElement actualModules = mainModulesAccess.access22Modules;
+        Assert.assertEquals(actualModules,expectedModules);
+
+
+
 
 
 
