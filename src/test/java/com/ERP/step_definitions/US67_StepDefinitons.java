@@ -20,6 +20,7 @@ public class US67_StepDefinitons {
     }
     @Then("user will have access to the {int} modules")
     public void user_will_have_access_to_the_modules(Integer int1) {
+
         for (WebElement eachElement : mainModuleAccess.allModules ) {
             eachElement.click();
             if (eachElement.isDisplayed()){
@@ -29,5 +30,9 @@ public class US67_StepDefinitons {
 
     }
 
-    }
+
+
+
+      
+     
 

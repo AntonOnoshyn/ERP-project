@@ -7,25 +7,17 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class US67_MainModuleAccess extends BasePage {
-
-    public US67_MainModuleAccess(){
+public class US66_MainModulesAccess extends BasePage {
+    public US66_MainModulesAccess(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
 
-   
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement txt_login;
 
-     @FindBy(xpath = "//li[@style='display: block;']")
-
-    public List<WebElement> allModules;
-
-
-
-
-
-
-
+    @FindBy(xpath = "//li[@style='display: block;']")
+    public List<WebElement> access22Modules;
 
 
 
