@@ -23,9 +23,9 @@ public class POS_Manager_PointOfSale extends BasePage{
     @FindBy (xpath = "(//table//div[@class='o_checkbox'])[1]")
     public WebElement orderRef;
 
-    @FindBy(xpath = "(//table//div[@class='o_checkbox'])[2]")
+    @FindBy(xpath = "//table//div[@class='o_checkbox']")
 
-    public WebElement secondEl;
+    public List<WebElement> tableElements;
 
 
     @FindBy(xpath = "//button[normalize-space(text())='Action'] ")

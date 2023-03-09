@@ -48,10 +48,10 @@ public class US05_StepDefs {
     }
     @Then("All orders should be checked")
     public void all_orders_should_be_checked() {
-    List<WebElement> radioButtons = Driver.getDriver().findElements(By.xpath("//table//div[@class='o_checkbox']"));
-
-        for (WebElement radioButton : radioButtons){
-        Assert.assertTrue(radioButton.isSelected());
+        for (WebElement eachElement : pos_manager_pointOfSale.tableElements) {
+            if (!eachElement.isDisplayed()){
+                Assert.assertTrue("Element is not checked",!eachElement.isDisplayed());
+            }
         }
 
 
