@@ -7,3 +7,10 @@ Feature: User is able to see correct information on the Documentation page
     Given user uses valid credentials
     When user is able to click username tab and select Documentation from dropdown
     Then user is on the Documentation page and user sees "Odoo Documentation" displayed in header
+
+    @doc2
+
+    Scenario: Verify user four main modules
+      Given user uses valid credentials
+      When user is able to click username tab and select Documentation from dropdown
+      Then user sees four main document topics on page

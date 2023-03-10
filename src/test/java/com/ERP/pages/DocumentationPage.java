@@ -23,4 +23,17 @@ public class DocumentationPage {
     @FindBy(xpath = "//*[@id=\"o_content\"]/section[1]/h1")
     public WebElement header;
 
+    @FindBy(xpath = "//*[@id=\"o_content\"]/section[2]/div[1]/div[1]/ul/li[1]/a")
+    public WebElement accounting;
+
+    @FindBy(xpath = "//*[@id=\"o_content\"]/section[2]/div[1]/div[1]/ul/li[2]/a")
+    public WebElement inventory;
+
+    @FindBy(xpath = "//*[@id=\"o_content\"]/section[2]/div[1]/div[1]/ul/li[3]/a")
+    public WebElement manufactoring;
+
+    @FindBy(xpath = "//*[@id=\"o_content\"]/section[2]/div[1]/div[1]/ul/li[4]/a")
+    public WebElement pointOfSale;
+
+
 }
