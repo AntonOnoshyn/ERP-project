@@ -1,5 +1,7 @@
+@Anton
 Feature: POS manager should be able to view product order
   Agile Story: As a Point of Sale manager (POS), I should be able to view product order
+
   Background: User logged in as POS manager
     When POS manager types username
     And POS manager types password
